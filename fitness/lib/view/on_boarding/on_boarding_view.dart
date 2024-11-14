@@ -107,7 +107,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
                         setState(() {});
                       } else {
                         print("Open Welcome Screen");
-                        Navigator.push(context, MaterialPageRoute(builder: (context) => const SignupView()));
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => const SignUpView()));
                       }
                     },
                   ),
