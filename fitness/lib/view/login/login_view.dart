@@ -1,6 +1,6 @@
 import 'package:fitness/common/colo_extension.dart';
 import 'package:fitness/common_widget/round_button.dart';
-import 'package:fitness/common_widget/round_textField.dart';
+import 'package:fitness/common_widget/round_textfield.dart';
 import 'package:fitness/view/login/complete_profile_view.dart';
 import 'package:flutter/material.dart';
 
@@ -82,14 +82,14 @@ class _SignUpViewState extends State<LoginView> {
                     )
                   ],
                 ),
-                Spacer(),
+                const Spacer(),
                 RoundButton(
                     title: "Login",
                     onPressed: () {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => CompleteProfileView()));
+                              builder: (context) => const CompleteProfileView()));
                     }),
                 SizedBox(
                   height: media.width * 0.04,

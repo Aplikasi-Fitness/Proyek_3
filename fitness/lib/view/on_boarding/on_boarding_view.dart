@@ -1,5 +1,5 @@
 import 'package:fitness/common_widget/on_boarding_page.dart';
-import 'package:fitness/view/login/login_view.dart';
+import 'package:fitness/view/login/signup_view.dart';
 import 'package:flutter/material.dart';
 import '../../common/colo_extension.dart';
 
@@ -13,9 +13,9 @@ class OnBoardingView extends StatefulWidget {
 class _OnBoardingViewState extends State<OnBoardingView> {
   int selectPage = 0;
   PageController controller = PageController();
-
+  @override
   void initState() {
-    // TODO implement initState
+    
     super.initState();
 
     controller.addListener(() {
@@ -54,8 +54,6 @@ class _OnBoardingViewState extends State<OnBoardingView> {
 
   @override
   Widget build(BuildContext context) {
-    var media = MediaQuery.of(context).size;
-
     return Scaffold(
       backgroundColor: TColor.white,
       body: Stack(
@@ -107,7 +105,10 @@ class _OnBoardingViewState extends State<OnBoardingView> {
                         setState(() {});
                       } else {
                         print("Open Welcome Screen");
-                        Navigator.push(context, MaterialPageRoute(builder: (context) => const LoginView()));
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const SignUpView()));
                       }
                     },
                   ),
