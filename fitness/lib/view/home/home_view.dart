@@ -5,7 +5,6 @@ import 'package:fitness/view/home/finished_workout_view.dart';
 import 'package:fitness/view/home/notification_view.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
-import 'package:simple_animation_progress_bar/simple_animation_progress_bar.dart';
 import 'package:simple_circular_progress_bar/simple_circular_progress_bar.dart';
 
 class HomeView extends StatefulWidget {
@@ -225,38 +224,7 @@ class _HomeViewState extends State<HomeView> {
                 SizedBox(
                   height: media.width * 0.05,
                 ),
-                Container(
-                  padding:
-                      const EdgeInsets.symmetric(vertical: 15, horizontal: 15),
-                  decoration: BoxDecoration(
-                    color: TColor.primaryColor2.withOpacity(0.3),
-                    borderRadius: BorderRadius.circular(15),
-                  ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        "Today Target",
-                        style: TextStyle(
-                            color: TColor.black,
-                            fontSize: 14,
-                            fontWeight: FontWeight.w700),
-                      ),
-                      SizedBox(
-                          width: 75,
-                          height: 25,
-                          child: RoundButton(
-                              title: "Check",
-                              type: RoundButtonType.bgGradient,
-                              fontSize: 12,
-                              fontWeight: FontWeight.w400,
-                              onPressed: () {}))
-                    ],
-                  ),
-                ),
-                SizedBox(
-                  height: media.width * 0.05,
-                ),
+                
                 Text(
                   "Activity Status",
                   style: TextStyle(
