@@ -279,7 +279,7 @@ class _WorkoutScheduleViewState extends State<WorkoutScheduleView> {
                                                                 Alignment.center,
                                                             decoration: BoxDecoration(
                                                                 color: TColor
-                                                                    .lightGray,
+                                                                    .LightGray,
                                                                 borderRadius:
                                                                     BorderRadius
                                                                         .circular(
@@ -313,7 +313,7 @@ class _WorkoutScheduleViewState extends State<WorkoutScheduleView> {
                                                                 Alignment.center,
                                                             decoration: BoxDecoration(
                                                                 color: TColor
-                                                                    .lightGray,
+                                                                    .LightGray,
                                                                 borderRadius:
                                                                     BorderRadius
                                                                         .circular(
